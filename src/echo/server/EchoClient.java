@@ -90,6 +90,7 @@ public class EchoClient extends JFrame {
 			//서버에서 날아온 메세지를 area에 출력해보자!!
 			String data = buffr.readLine();
 			area.append(data+"\n");
+			//setText로하면 누적되지 않음,,
 			t_input.setText("");
 			
 		} catch (IOException e) {
